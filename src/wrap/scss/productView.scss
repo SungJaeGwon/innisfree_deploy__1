@@ -1,0 +1,216 @@
+#productView{
+    width: 100%;
+    padding: 30px 0;
+    background: #fff;
+    user-select: none;
+    #section1{
+        width: 1280px;
+        margin: 60px auto;
+        .container{
+            width: 100%;
+            .content{
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+                .left{
+                    width: 500px;
+                    img{
+                        width: 500px;
+                    }
+                }
+                .right{
+                    width: 680px;
+                    padding: 0 0 0 50px;
+                    ul{
+                        line-height: 160%;
+                        > li{
+                            padding-bottom: 14px;
+                            line-height: 140%;
+                            h2{
+                                em{
+                                    font-size: 40px;
+                                    line-height: 40px;
+                                    font-weight: 600;
+                                    &.on{
+                                        display: none;
+                                    }
+                                }
+                                span{
+                                    font-size: 40px;
+                                    line-height: 40px;
+                                    font-weight: 400;
+                                    margin-left: 15px;
+                                    &.on{
+                                        margin-left: 0;
+                                    }
+                                }
+                            }
+                            h3{
+                                font-size: 12px;
+                                color: #333;
+                                display: flex;
+                                padding-bottom: 15px;
+                                strong{
+                                    font-size: 28px;
+                                    font-weight: 600;
+                                }
+                                h6{
+                                    margin-left: 10px;
+                                    font-size: 20px;
+                                    color: #FF0000;
+                                }
+                                p{                
+                                    margin-left: 10px;
+                                    font-size: 20px;
+                                    text-decoration: line-through;
+                                    color: #999;
+                                    &.on{
+                                        display: none;
+                                    }
+                                }
+                            }
+                            &:nth-child(4){
+                                margin: 20px 0 30px;
+                                padding-bottom: 0;
+                            }
+                        }
+                        &.table{
+                            border-top: 1px solid #eee;
+                            border-bottom: 1px solid #eee;
+                            padding: 30px 0 0 0;
+                            > li{
+                                display: flex;
+                                justify-content: space-between;
+                                > div{
+                                    font-size: 14px;
+                                    color: #555;
+                                    &.col1{
+                                        width: 128px;
+                                    }
+                                    &.col2{
+                                        width: 432px;
+                                        em{
+                                            line-height: 140%;
+                                            font-size: 14px;
+                                        }
+                                    }                                    
+                                    &.count-left{
+                                        margin: 10px 0;
+                                        padding: 20px 0;
+                                        display: flex;
+                                        justify-content: space-between;
+                                        align-items: center;
+                                        position: relative;
+                                        width: 100%;
+                                        ul{
+                                            display: inline-flex;
+                                            align-items: center;
+                                            justify-content: space-between;
+                                            border: 1px solid #eee;
+                                            width: 180px;
+                                            height: 40px;
+                                            li{
+                                                padding: 0;
+                                                button{
+                                                    width: 45px;
+                                                    height: 38px;
+                                                    padding: 12px 15px;
+                                                    border: 0;
+                                                    background-color: transparent;
+                                                    cursor: pointer;
+                                                    &.dec-btn{
+                                                        background: url(../../../public/images/productView/ico_dec.png) no-repeat 50% 50%;
+                                                    }
+                                                    &.inc-btn{
+                                                        background: url(../../../public/images/productView/ico_inc.png) no-repeat 50% 50%;
+                                                    }
+                                                }
+                                                span{
+                                                    width: 28px;
+                                                    height: 28px;
+                                                    font-size: 14px;
+                                                    font-weight: 600;
+                                                    color: #222;
+                                                    display: inline-flex;
+                                                    align-items: center;
+                                                    justify-content: center;
+                                                }
+                                            }
+                                        }
+                                        p{
+                                            position: absolute;
+                                            top: 30px;
+                                            right: 0;
+                                            //padding-left: 500px;
+                                            font-size: 16px;
+                                        }
+                                    }
+                                }
+                            }
+                        } 
+                    }                                      
+                    .sum-payment{
+                        display: flex;
+                        margin-left: auto;    
+                        justify-content: flex-end;
+                        padding-top: 20px;
+                        em{
+                            margin-right: 10px;
+                            font-size: 14px;
+                            line-height: 18px;
+                            color: #000;
+                            text-align: center;
+                            line-height: 24px;
+                        }
+                        strong{
+                            color: #00BC70;
+                            margin-right: 3px;
+                            font-weight: 700;
+                            font-size: 20px;
+                            line-height: 24px;
+                        }
+                        i{
+                            color: #00BC70;
+                            margin-right: 3px;
+                            font-weight: 700;
+                            font-size: 20px;
+                            line-height: 24px;
+                        }
+                    }   
+                    .button-box{
+                        display: flex;
+                        padding-top: 30px;
+                        button{
+                            &:nth-child(1){
+                                width: 60px;
+                                height: 60px;
+                                border: 0;
+                                background: url(../../../public/images/productView/ico_share_white.png) #333333 no-repeat 50% 50%;
+                            }
+                            &:nth-child(2){
+                                width: 60px;
+                                height: 60px;
+                                border: 0;
+                                background: url(../../../public/images/productView/ico_heart32_white.png) #333333 no-repeat 50% 50%;
+                            }
+                            &:nth-child(3){
+                                width: 280px;
+                                height: 60px;
+                                color: #FFFFFF;
+                                background-color: #000000;
+                                border: 0;
+                            }
+                            &:nth-child(4){
+                                width: 280px;
+                                height: 60px;
+                                color: #FFFFFF;
+                                background-color: #00BC70;
+                                border: 0;
+                            }
+                        }
+                    }       
+                }
+            }
+        }
+    }
+}
